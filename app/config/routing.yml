@@ -1,0 +1,7 @@
+vclap_api_user:
+    resource: "@VclapApiUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

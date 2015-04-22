@@ -1,0 +1,45 @@
+Vclap_api:
+    resource: "@VclapApiUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+Vclap_usercontrol:
+    resource: 'Vclap\Api\UserBundle\Controller\UserController'
+    type:     rest
+    methods:  [POST,GET]
+
+_Vclapupload:
+    resource: 'Vclap\Api\UserBundle\Controller\FileController'
+    type:     annotation
+    prefix:   /fileoperations
+    
+Vclap_contactcontrol:
+    resource: 'Vclap\Api\UserBundle\Controller\ContactsController'
+    type:     rest
+    methods:  [POST,GET]
+    
+Vclap_messagecontrol:
+    resource: 'Vclap\Api\UserBundle\Controller\MessageController'
+    type:     rest
+    methods:  [POST,GET]
+
+Vclap_groupcontrol:
+    resource: 'Vclap\Api\UserBundle\Controller\GroupController'
+    type:     rest
+    methods:  [POST,GET]
+
+Vclap_generalcontrol:
+    resource: 'Vclap\Api\UserBundle\Controller\GeneralController'
+    type:     rest
+    methods:  [POST,GET]    
+
+Vclap_storycontrol:
+    resource: 'Vclap\Api\UserBundle\Controller\StoryController'
+    type:     rest
+    methods:  [POST,GET] 
+
+
+Vclap_emoticoncontrol:
+    resource: 'Vclap\Api\UserBundle\Controller\EmoticonController'
+    type:     annotation
+    prefix:   /emoticon
