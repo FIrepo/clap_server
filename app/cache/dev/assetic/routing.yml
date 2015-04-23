@@ -2,4 +2,4 @@ _assetic:
     resource: .
     type: assetic
 _app:
-    resource: /Users/vigneshkarnika/Desktop/mypro/app/config/routing_dev.yml
+    resource: /Users/vigneshkarnika/clap_server/app/config/routing_dev.yml

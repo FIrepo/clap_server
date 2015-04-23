@@ -25,7 +25,7 @@ class appDevDebugProjectContainer extends Container
     public function __construct()
     {
         $dir = __DIR__;
-        for ($i = 1; $i <= 5; ++$i) {
+        for ($i = 1; $i <= 4; ++$i) {
             $this->targetDirs[$i] = $dir = dirname($dir);
         }
         $this->parameters = $this->getDefaultParameters();
@@ -768,7 +768,7 @@ class appDevDebugProjectContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_metadata_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf2orm_default_face73ce86166d75bd352f6a2ad3abeb55afd72b72b26907600b3ec94f0d10d3');
+        $instance->setNamespace('sf2orm_default_fe9c3a5f32a15af0c82b0e141279012ace8d51898c2ed94f10762f88c6e74c36');
 
         return $instance;
     }
@@ -785,7 +785,7 @@ class appDevDebugProjectContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_query_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf2orm_default_face73ce86166d75bd352f6a2ad3abeb55afd72b72b26907600b3ec94f0d10d3');
+        $instance->setNamespace('sf2orm_default_fe9c3a5f32a15af0c82b0e141279012ace8d51898c2ed94f10762f88c6e74c36');
 
         return $instance;
     }
@@ -802,7 +802,7 @@ class appDevDebugProjectContainer extends Container
     {
         $this->services['doctrine_cache.providers.doctrine.orm.default_result_cache'] = $instance = new \Doctrine\Common\Cache\ArrayCache();
 
-        $instance->setNamespace('sf2orm_default_face73ce86166d75bd352f6a2ad3abeb55afd72b72b26907600b3ec94f0d10d3');
+        $instance->setNamespace('sf2orm_default_fe9c3a5f32a15af0c82b0e141279012ace8d51898c2ed94f10762f88c6e74c36');
 
         return $instance;
     }
@@ -4288,7 +4288,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.root_dir' => $this->targetDirs[2],
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
-            'kernel.name' => 'app',
+            'kernel.name' => 'ap_',
             'kernel.cache_dir' => __DIR__,
             'kernel.logs_dir' => ($this->targetDirs[2].'/logs'),
             'kernel.bundles' => array(
